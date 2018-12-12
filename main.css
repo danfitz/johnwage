@@ -100,33 +100,30 @@ p {
   align-self: center;
 }
 
-#siteForm {
-  padding: 10px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-#formName {
-  padding: 10px;
-  font-family: "Dancing Script", sans-serif;
-  font-size: 20px;
-}
-
-#formName::placeholder {
-  color: lightgray;
-}
-
-#formButton {
-  margin: 10px;
+#ctaButton {
+  margin: 10px 10px 100px 10px;
   padding: 20px;
   background-color: #60C290;
   border: 0px;
   border-radius: 50px;
   font-family: "Lato", sans-serif;
   font-size: 20px;
+  font-weight: 700;
+  color: white;
+  align-self: center;
+}
+
+#ctaButton a {
+  text-decoration: none;
   color: white;
 }
+
+footer {
+  margin-bottom: 10px;
+  text-align: center;
+  color: lightgray;
+}
+
 
 @media screen and (min-width: 750px) {
   #siteDescription {
