@@ -54,13 +54,13 @@ header {
   position: fixed;
   left: -200px;
   z-index: -1;
-  animation-name: runningCat;
+  animation-name: runningAnimal;
   animation-duration: 8s;
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
 }
 
-@keyframes runningCat {
+@keyframes runningAnimal {
   100% {
     left: 1000px;
   }
@@ -136,4 +136,9 @@ p {
     width: 400px;
     height: 225px;
   }
+  @keyframes runningAnimal {
+  100% {
+    left: 2000px;
+  }
+}
 }
