@@ -136,9 +136,12 @@ p {
     width: 400px;
     height: 225px;
   }
-  @keyframes runningAnimal {
-  100% {
-    left: 2000px;
+  #gif {
+  animation-duration: 12s;
   }
-}
+  @keyframes runningAnimal {
+    100% {
+      left: 2000px;
+    }
+  }
 }
