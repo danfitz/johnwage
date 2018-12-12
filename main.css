@@ -5,66 +5,135 @@
 body {
   margin: 0;
   padding: 0;
-  background: url("images/birthday%20background.jpg");
-  background-size: cover;
 }
 
 main {
-  margin: 50px auto;
-  padding: 30px;
-  width: 80%;
-  background-color: rgba(255,255,255, 0.8);
-  border-radius: 50px;
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
 
-#siteTitle {
-  font-family: "Dancing Script", sans-serif;
-  font-size: 50px;
-  font-weight: 700;
-  text-align: center;
+header {
+  padding: 5px;
+  background-color: #60C290;
+  width: 100%;
+  position: fixed;
+  z-index: 2;
+  display: grid;
+  grid-template-columns: 1fr 2.5fr;
+  align-items: center;
 }
 
 #siteImage {
-  margin: 20px;
-  width: 200px;
+  width: 75px;
+  height: 75px;
   border-radius: 180px;
-  border: 2px solid #B7886E;
+  border: 2px solid white;
+  justify-self: end;
+}
+
+#siteTitle {
+  padding-left: 5px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+#siteTitle #name {
+  font-family: "Dancing Script", sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+#siteTitle #topic {
+  padding-left: 108px;
+  font-weight: 700;
+}
+
+#gif {
+  width: 200px;
+  position: fixed;
+  left: -200px;
+  z-index: -1;
+  animation-name: runningCat;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes runningCat {
+  100% {
+    left: 1000px;
+  }
+}
+
+main {
+  position: relative;
+  padding-top: 125px;
+  z-index: 1;
 }
 
 #siteDescription {
+  margin: 0 auto;
+  width: 70%;
+  text-align: justify;
   font-size: 20px;
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
 
+p {
+  margin: 10px;
+}
 
 #giveDirectlyLogo {
-  padding-top: 10px;
-  width: 50%;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  width: 300px;
+  align-self: center;
 }
 
-#gdForm {
+#giveDirectlyVideo {
+  padding: 10px 0;
+  margin: 0 auto;
+  width: 250px;
+  height: 141px;
+  align-self: center;
+}
+
+#siteForm {
+  padding: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-#gdName {
+#formName {
   padding: 10px;
-  border-radius: 50px;
+  font-family: "Dancing Script", sans-serif;
   font-size: 20px;
 }
 
-#gdButton {
+#formName::placeholder {
+  color: lightgray;
+}
+
+#formButton {
   margin: 10px;
-  padding: 5px 10px;
-  background-color: #B7886E;
+  padding: 20px;
+  background-color: #60C290;
   border: 0px;
   border-radius: 50px;
-  font-family: "Dancing Script", sans-serif;
+  font-family: "Lato", sans-serif;
   font-size: 20px;
+  color: white;
+}
+
+@media screen and (min-width: 750px) {
+  #siteDescription {
+    width: 500px;
+  }
+  #giveDirectlyVideo {
+    width: 400px;
+    height: 225px;
+  }
 }
