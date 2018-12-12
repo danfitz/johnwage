@@ -9,32 +9,37 @@
   </head>
   
   <body>
-    
-    <main>
-      <div id="siteTitle">
-        John's Birthday Donation!
-      </div>
+    <header>
       <img id="siteImage" src="images/john.jpg">
-      <div id="siteDescription">
-        <span style="font-family: 'Dancing Script', sans-serif; align-self: start; font-size: 40px;">Hi all!</span>
-        <p style="align-self: start;">For my birthday (Dec 13th), if you were intending on giving me a gift, please instead donate to my charity of choice this year:</p>
-        <img id="giveDirectlyLogo" src="images/GiveDirectly%20logo.png">
-        <p style="align-self: start;">GiveDirectly transfers cash to poor households in low-income countries primarily via mobile phone-linked payment services. It has operated since 2009 and is currently active in Kenya, Uganda, and Rwanda (launched in October 2016).</p>
-        <p style="align-self: start;">I truly don’t need any money or gifts this year.  I have plenty.  Your dollar will have a much greater impact with GiveDirectly than with me.</p>
-        <p style="align-self: start; font-weight: 700;">It would make me really happy if for my birthday someone’s quality of life went up.  You could offer them and their family more choice, more hope, and hopefully more opportunity.</p>
-        <p style="align-self: start; font-weight: 700;">You don’t need to tell me how much you donated. I’ll know you donated by clicking the link below:</p>
-        <form id="gdForm" action="https://formspree.io/john.m.wage@gmail.com" method="POST">
-          <input id="gdName" type="text" name="name" placeholder="What's your name? :)" required>
-          <button id="gdButton" type="submit">
-            Go to <span style="font-family: 'Lato' !important; font-size: 15px;">GiveDirectly.org</span>
-          </button>
-          <input type="hidden" name="_next" value="https://GiveDirectly.org">
-        </form>
-        <p style="align-self: start;">Thank you for the birthday gift, and sorry for this last minute post!</p>
-        <p style="align-self: start;">Love always,</p>
-        <span style="font-family: 'Dancing Script', sans-serif; align-self: start; font-size: 40px;">John</span>
+      <div id="siteTitle">
+        <div id="name">John's Birthday</div>
+        <div id="topic">Donation</div>
       </div>
+    </header>
+      
+
+    
+    <main>  
+       <img id="gif" src="images/unicorn.gif">
+      <div id="siteDescription">
+        <p style="font-family: 'Dancing Script', sans-serif; font-size: 30px;">Hi all!</p>
+        <p>For my birthday (Dec 13th), please consider donating to my charity of choice for this year:</p>
+        <img id="giveDirectlyLogo" src="images/GiveDirectly%20logo.png">
+        <p>It would make me really happy if for my birthday someone’s quality of life went up.  You could offer them and their family more choice, more hope, and hopefully more opportunity.</p>
+        <p>You don’t need to tell me how much you donated. (But you can send me a screenshot if you'd like!)</p>
+        <iframe id="giveDirectlyVideo" src="https://www.youtube.com/embed/64z9-m6wEw0?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <p>GiveDirectly transfers cash to poor households in low-income countries primarily via mobile phone-linked payment services. It has operated since 2009 and is currently active in Kenya, Uganda, and Rwanda.</p>
+        <p>I truly don’t need any money or gifts this year. Your dollar will have a much greater impact with GiveDirectly than with me.</p>
+      </div>
+
+      <form id="siteForm" action="https://formspree.io/john.m.wage@gmail.com" method="POST">
+        <input id="formName" type="text" name="name" placeholder="Your name" required>
+        <button id="formButton" type="submit">
+          Go to GiveDirectly.org
+        </button>
+        <input type="hidden" name="_next" value="https://GiveDirectly.org">
+      </form>
+
     </main>
   </body>
-
 </html>
